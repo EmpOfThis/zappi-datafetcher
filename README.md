@@ -9,6 +9,7 @@ password:str = "APIpasswordHere"
 The APIpassword/key can be set up in the Zappi app
 
 **Output**
+
 The python file writes its data in a .CSV file, named 'data.csv'
 The following headers will be printed in the .csv file, with their values per hour:
 - time, date + hh:mm:ss;
