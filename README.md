@@ -1,5 +1,5 @@
 # zappi-datafetcher
-Python 3 script to fetch information from Zappi servers, and combine this information with actual energy prices from the energyzero API, used by the Dutch 'ANWB energie' program. 'ANWB energie' is an energy provider that uses variable tarrifs, changing every hour based on the market price of energy.
+Python 3 script to fetch information from Zappi servers, and combine this information with actual energy prices from the energyzero API. These prices are used by the Dutch 'ANWB energie' program. 'ANWB energie' is an energy provider that uses variable tarrifs, changing the actual price every hour based on the market price of energy.
 Requires a Zappi charger.
 
 **Setup**
