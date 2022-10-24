@@ -96,6 +96,8 @@ def linkOneHour(zappiEndpoint, chargeHourly, priceThisHour, hour):
         
         return energy, price
     else:
+        #If there was no activity for the given endpoint in the given hour, the Zappi servers omit the endpoint in the data returned.
+        #So if the endpoint is not in the list, both the energy and the price for the given endpoint at the given time were zero.
         return 0, 0
     
 
@@ -106,10 +108,10 @@ def getEnergyPrices(fromDate, tillDate):
     pricesPerHour = json.loads(response.text)["Prices"]
     return pricesPerHour
 
-
+#Create and fill a .csv file by calling one of the two functions below.
 #Inputformat startdate is :ddmmyyyy
 #getZappiData("01062022", "02062022")
 
-#GetZappiDataMonth(Eerste maand, laatste maand.)
-#Voor het hele jaar: getZappiDataMonth("012022", "122022")
+#GetZappiDataMonth(firstMonth, lastMonth)
+#For the full year: getZappiDataMonth("012022", "122022")
 getZappiDataMonth("042022", "042022")
