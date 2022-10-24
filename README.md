@@ -1,6 +1,7 @@
 # zappi-datafetcher
 Python 3 script to fetch information from Zappi servers.
-Works if you have a Zappi charger.
+Requires a Zappi charger.
+
 The 'main.py' file should be used together with a 'credentials.py' file, having the following format:
 ```
 serialHub:str = "HubSerialNumberHere"
